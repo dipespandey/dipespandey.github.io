@@ -1,0 +1,26 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% seo %}
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/index.css" | relative_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/genalize_logo.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/genalize_logo.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/apple-touch-icon.png" | relative_url }}">
+
+  <!-- RSS -->
+  {% feed_meta %}
+
+  <!-- Google Analytics-->
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
+</head>

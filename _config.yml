@@ -1,0 +1,55 @@
+# Site settings
+title:          Dipesh Pandey
+description:    "Personal Blog"
+baseurl:        ""
+url:            "https://dipeshpandey.com"
+
+# Google Analytics
+google_analytics: "UA-141259679-1"
+
+# Disqus
+disqus:
+  shortname: dipeshpandey
+
+# Author
+author:
+  name:         Dipesh Pandey
+  url:          https://dipeshpandey.com
+  email:        pandey.dipesh50@gmail.com
+
+
+# collections
+collections:
+  pastworks:
+    output: true
+    permalink: pastworks/:name:output_ext
+    paginate: 5
+  random:
+    output: true
+    permalink: random/:name:output_ext
+    paginate: 5
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+  - _blog
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+# permalink:      /:year-:month-:day/:title:output_ext
+# paginate:       5
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]

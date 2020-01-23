@@ -1,0 +1,23 @@
+---
+layout: post
+title: "About Me"
+comments: false
+---
+
+{% capture md %}
+I am a novice programmer and a life-time learner. My hobbies include NLP, building end-to-end products and learning the startup culture.
+Working remotely gives me that extra time to tinker around with what I love. I try to write sometimes, especially to keep track of my learnings.
+
+[Teamcoda](https://teamcoda.com), the company I work for, is a collection of wonderful developers from diverse backgrounds. We are trying to create 
+products using the best and well tested methods. I mainly specialize on Python, Django, Flask, Pandas, Angular, NestJS with some machine learning here and there.
+
+If you think I can help you in any of your software product that touches full-stack, machine learning or is data-intensive, I am easy to find. 
+Just reach me out to one of the networks below.
+In case you want to know more about my background, [here's my CV](/assets/dipesh_pandey_resume.pdf). 
+  
+Thanks for reading!
+  
+{% endcapture %}
+{{ md | markdownify }}
+
+{% include social.html %}
