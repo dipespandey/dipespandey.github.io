@@ -81,3 +81,6 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
+html {
+	font-family: "proxima-nova", "Times New Roman", Times, serif;
+}
