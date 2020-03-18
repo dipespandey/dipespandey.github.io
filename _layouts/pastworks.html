@@ -4,7 +4,7 @@ comments: false
 ---
 
 <div class="catalogue">
-    {% for post in site.pastworks reversed %}
+    {% for post in site.myworks reversed %}
       <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
         <div>
           <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>

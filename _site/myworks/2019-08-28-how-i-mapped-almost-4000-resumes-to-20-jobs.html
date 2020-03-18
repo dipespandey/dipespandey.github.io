@@ -13,13 +13,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The Problem" />
 <meta property="og:description" content="The Problem" />
-<link rel="canonical" href="https://dipeshpandey.com/pastworks/2019-08-28-how-i-mapped-almost-4000-resumes-to-20-jobs.html" />
-<meta property="og:url" content="https://dipeshpandey.com/pastworks/2019-08-28-how-i-mapped-almost-4000-resumes-to-20-jobs.html" />
+<link rel="canonical" href="http://localhost:4000/myworks/2019-08-28-how-i-mapped-almost-4000-resumes-to-20-jobs.html" />
+<meta property="og:url" content="http://localhost:4000/myworks/2019-08-28-how-i-mapped-almost-4000-resumes-to-20-jobs.html" />
 <meta property="og:site_name" content="Dipesh Pandey" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-08-28T00:00:00+05:45" />
 <script type="application/ld+json">
-{"headline":"I mapped almost 5000 CVs to 20 jobs","dateModified":"2019-08-28T00:00:00+05:45","datePublished":"2019-08-28T00:00:00+05:45","url":"https://dipeshpandey.com/pastworks/2019-08-28-how-i-mapped-almost-4000-resumes-to-20-jobs.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://dipeshpandey.com/pastworks/2019-08-28-how-i-mapped-almost-4000-resumes-to-20-jobs.html"},"author":{"@type":"Person","name":"Dipesh"},"description":"The Problem","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"headline":"I mapped almost 5000 CVs to 20 jobs","dateModified":"2019-08-28T00:00:00+05:45","datePublished":"2019-08-28T00:00:00+05:45","url":"http://localhost:4000/myworks/2019-08-28-how-i-mapped-almost-4000-resumes-to-20-jobs.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/myworks/2019-08-28-how-i-mapped-almost-4000-resumes-to-20-jobs.html"},"author":{"@type":"Person","name":"Dipesh"},"description":"The Problem","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -36,19 +36,9 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 
   <!-- RSS -->
-  <link type="application/atom+xml" rel="alternate" href="https://dipeshpandey.com/feed.xml" title="Dipesh Pandey" />
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Dipesh Pandey" />
 
   <!-- Google Analytics-->
-  
-    <script async type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  
-  ga('create', 'UA-141259679-1', 'auto');
-  ga('send', 'pageview');
-  </script>
   
 </head>
 
@@ -61,7 +51,7 @@
     </a>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/pastworks">Past Works</a></li>
+      <li><a href="/myworks">My Works</a></li>
       <li><a href="/random/">Random</a></li>
       <li><a href="/contact">Contact Me</a></li>
     </ul>
@@ -84,7 +74,7 @@
     
   </div>
 
-  <h1 class="post-title">I mapped almost 5000 CVs to 20 jobs</h1>
+  <h3 class="post-title">I mapped almost 5000 CVs to 20 jobs</h3>
   <div class="post-line"></div>
 
   <h2 id="the-problem">The Problem</h2>
@@ -174,7 +164,7 @@
             <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">email</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">email</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
         <span class="k">return</span> <span class="s">''</span>
-        
+
     <span class="k">def</span> <span class="nf">find_phone</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="p">):</span>
         <span class="n">regex</span> <span class="o">=</span> <span class="s">r"\+\d+(?:[-? \)]+\d+)+"</span>
         <span class="n">cv</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cv</span>
@@ -187,7 +177,7 @@
                 <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">phone</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">&gt;</span><span class="mi">9</span><span class="p">:</span>
                     <span class="k">return</span> <span class="n">phone</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
         <span class="k">return</span> <span class="s">''</span>
-        
+
     <span class="k">def</span> <span class="nf">nationality</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="p">):</span>
         <span class="n">cv</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cv</span> 
         <span class="n">regex</span> <span class="o">=</span> <span class="s">r"citizenship[:\s*\t*]*\w+"</span>
@@ -250,13 +240,13 @@ After a lot of iterations, I opted for this :</p>
             <span class="k">if</span> <span class="n">key</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">:</span>
                 <span class="n">temp_keys</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
         <span class="n">total_dataset</span><span class="p">[</span><span class="n">job</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">nlp</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">temp_keys</span><span class="p">]</span>
-    
+
     <span class="n">matcher</span> <span class="o">=</span> <span class="n">PhraseMatcher</span><span class="p">(</span><span class="n">nlp</span><span class="o">.</span><span class="n">vocab</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">job</span> <span class="ow">in</span> <span class="n">total_dataset</span><span class="p">:</span>
         <span class="n">matcher</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">job</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="o">*</span><span class="n">total_dataset</span><span class="p">[</span><span class="n">job</span><span class="p">])</span>
-    
+
     <span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-    
+
     <span class="n">d</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">matches</span> <span class="o">=</span> <span class="n">matcher</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">match_id</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>
@@ -320,6 +310,8 @@ Although, I finished the upload feature, what I would still like is the ability 
 
 <div class="pagination">
   
+    <a href="/myworks/2020-03-18-designing-a-serverless-data-management-platform.html" class="left arrow">&#8592;</a>
+  
   
 
   <a href="#" class="top">Top</a>
@@ -327,27 +319,11 @@ Although, I finished the upload feature, what I would still like is the ability 
 
 
 
-  <div id="disqus_thread"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = 'https://dipeshpandey.com/pastworks/2019-08-28-how-i-mapped-almost-4000-resumes-to-20-jobs.html';
-      this.page.identifier = 'dipeshpandey';
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://dipeshpandey.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script> 
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-
     </main>
 
     <footer>
   <span>
-    &copy; <time datetime="2020-01-23 21:27:51 +0545">2020</time> Dipesh Pandey. All Rights Reserved.
+    &copy; <time datetime="2020-03-18 10:16:59 +0545">2020</time> Dipesh Pandey. All Rights Reserved.
   </span>
 </footer>
 

@@ -1,7 +1,7 @@
 ---
 layout: pastworks
 title: "Past Works"
-permalink: /pastworks/
+permalink: /myworks/
 comments: false
 ---
 

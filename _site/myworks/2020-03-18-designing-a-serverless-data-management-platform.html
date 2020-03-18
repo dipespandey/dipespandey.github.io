@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Designing a serverless ads management platform for an AI company | Dipesh Pandey</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Designing a serverless ads management platform for an AI company" />
+<meta name="author" content="Dipesh" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In recent times, I am working with an early stage startup that specializes on Ads data aggregation and analysis to help the companies optimize their budgets through targeted insights. As a starting member of the development team, I took the responsibility to design the serverless architecture in AWS. After trying a few things here and there, we have come to use these awesome tools in AWS for the product:" />
+<meta property="og:description" content="In recent times, I am working with an early stage startup that specializes on Ads data aggregation and analysis to help the companies optimize their budgets through targeted insights. As a starting member of the development team, I took the responsibility to design the serverless architecture in AWS. After trying a few things here and there, we have come to use these awesome tools in AWS for the product:" />
+<link rel="canonical" href="http://localhost:4000/myworks/2020-03-18-designing-a-serverless-data-management-platform.html" />
+<meta property="og:url" content="http://localhost:4000/myworks/2020-03-18-designing-a-serverless-data-management-platform.html" />
+<meta property="og:site_name" content="Dipesh Pandey" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-18T00:00:00+05:45" />
+<script type="application/ld+json">
+{"headline":"Designing a serverless ads management platform for an AI company","dateModified":"2020-03-18T00:00:00+05:45","datePublished":"2020-03-18T00:00:00+05:45","url":"http://localhost:4000/myworks/2020-03-18-designing-a-serverless-data-management-platform.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/myworks/2020-03-18-designing-a-serverless-data-management-platform.html"},"author":{"@type":"Person","name":"Dipesh"},"description":"In recent times, I am working with an early stage startup that specializes on Ads data aggregation and analysis to help the companies optimize their budgets through targeted insights. As a starting member of the development team, I took the responsibility to design the serverless architecture in AWS. After trying a few things here and there, we have come to use these awesome tools in AWS for the product:","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/genalize_logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/genalize_logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Dipesh Pandey" />
+
+  <!-- Google Analytics-->
+  
+</head>
+
+  <body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">Dipesh Pandey</h2>
+    </a>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/myworks">My Works</a></li>
+      <li><a href="/random/">Random</a></li>
+      <li><a href="/contact">Contact Me</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    
+    
+    <span>Written by</span>
+        Dipesh
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2020-03-18 00:00:00 +0545">March 18, 2020</time>
+    
+  </div>
+
+  <h3 class="post-title">Designing a serverless ads management platform for an AI company</h3>
+  <div class="post-line"></div>
+
+  <p>In recent times, I am working with an early stage startup that specializes on Ads data aggregation and analysis
+to help the companies optimize their budgets through targeted insights. As a starting member of the development team,
+I took the responsibility to design the serverless architecture in AWS. After trying a few things here and there, we have
+come to use these awesome tools in AWS for the product:</p>
+
+<ol>
+  <li>
+    <p>API Gateway</p>
+  </li>
+  <li>
+    <p>Lambda Functions</p>
+  </li>
+  <li>
+    <p>DynamoDb</p>
+  </li>
+  <li>
+    <p>S3</p>
+  </li>
+</ol>
+
+<p>I will explain each of them briefly below and try to show the complete picture how these components interact with each other.</p>
+
+<p>Because this is going to be a SaaS, we are going to expose API endpoints to our clients where they can connect their Ad accounts and allow us to collect their data. We, in turn, will produce insights from the data and help them make better use of their budget
+through Targeted Ads Placement.</p>
+
+<p>To ensure we have a stable system, we need streaming and scheduling abilities in the product. I have approached these in the following ways.</p>
+
+<ol>
+  <li>
+    <p>Streaming
+We need the capability to stream data from the Ad accounts (eg. Google, Facebook, Youtube, et. al.) upto the S3 buckets so that this data can be used for analysis in the later stage. The obvious choice was Kinesis as it has in-built configuration options for source and sinks. But we chose the lighter and more configurable tool in DynamoDb which has got it’s own streaming triggers using Lambda. Also, the cost analysis helped us favor DynamoDb up front.</p>
+  </li>
+  <li>
+    <p>Scheduling
+Apart from streaming, we also need the capability to schedule the stream. For this, there are a lots of great options available including the likes of AirFlow, Celery, et. al. We have, however, chosen Cloudwatch Events (I think they now call it EventBridge) trigerring a lambda function, this being called by an API endpoint. This would mean we could create custom schedules from the API.</p>
+  </li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">boto3</span>
+
+<span class="n">cloudwatch_events</span> <span class="o">=</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s">'events'</span><span class="p">)</span>
+<span class="n">lambda_client</span> <span class="o">=</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s">'lambda'</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">schedule_event</span><span class="p">(</span><span class="n">schedule_object</span><span class="p">):</span>
+    <span class="c1"># Create a scheduled rule
+</span>    <span class="n">lambda_name</span> <span class="o">=</span> <span class="s">'markaiter-api-to-dyn'</span>
+    <span class="n">rule_response</span> <span class="o">=</span> <span class="n">cloudwatch_events</span><span class="o">.</span><span class="n">put_rule</span><span class="p">(</span><span class="n">Name</span><span class="o">=</span><span class="s">'DATA_EXTRACTION_EVENT'</span><span class="p">,</span>  
+                                               <span class="n">RoleArn</span><span class="o">=</span><span class="s">''</span><span class="p">,</span>  
+                                               <span class="n">ScheduleExpression</span><span class="o">=</span><span class="s">'custom_schedule_expression'</span><span class="p">,</span>  
+                                               <span class="n">State</span><span class="o">=</span><span class="s">'ENABLED'</span><span class="p">)</span>  
+    <span class="n">rule_name</span> <span class="o">=</span> <span class="s">"DATA_EXTRACTION_EVENT"</span>  
+
+    <span class="c1"># Add permission to lambda
+</span>    <span class="n">lambda_client</span><span class="o">.</span><span class="n">add_permission</span><span class="p">(</span><span class="n">FunctionName</span><span class="o">=</span><span class="s">'api-to-dynamodb'</span><span class="p">,</span>  
+                                    <span class="n">StatementId</span><span class="o">=</span><span class="s">"{0}-Event"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">rule_name</span><span class="p">),</span>  
+                                    <span class="n">Action</span><span class="o">=</span><span class="s">'lambda:InvokeFunction'</span><span class="p">,</span>  
+                                    <span class="n">Principal</span><span class="o">=</span><span class="s">'events.amazonaws.com'</span><span class="p">,</span>  
+                                    <span class="n">SourceArn</span><span class="o">=</span><span class="n">rule_response</span><span class="p">[</span><span class="s">'RuleArn'</span><span class="p">])</span>  
+
+    <span class="c1"># Add a lambda function target
+</span>    <span class="c1"># Put target for rule
+</span>    <span class="n">schedule_response</span> <span class="o">=</span> <span class="n">cloudwatch_events</span><span class="o">.</span><span class="n">put_targets</span><span class="p">(</span><span class="n">Rule</span><span class="o">=</span><span class="n">rule_name</span><span class="p">,</span>  
+                                                    <span class="n">Targets</span><span class="o">=</span><span class="p">[</span>  
+                                                        <span class="p">{</span>  
+                                                            <span class="s">'Arn'</span><span class="p">:</span> <span class="n">f</span><span class="s">'function_arn'</span><span class="p">,</span>  
+                                                            <span class="s">'Id'</span><span class="p">:</span> <span class="s">'EventsTargetID'</span><span class="p">,</span>  
+                                                            <span class="s">'Input'</span><span class="p">:</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">schedule_object</span><span class="p">)</span>  
+                                                        <span class="p">}])</span>  
+    <span class="k">return</span> <span class="n">schedule_response</span>  
+
+</code></pre></div></div>
+
+<p>The code is pretty much self-explanatory. What we do is we pass the schedule_object through the API. This triggers a cloudwatch event which in turn triggers a lambda function according to the schedule passed in. The lambda function does the intended task to collect data and send it to DynamoDb.</p>
+
+<p>DynamoDb is configured in such a way that any incoming data would trigger another lambda function which would send it to S3. S3, here, is our final sink. We can now use to query data from S3 and apply the necessary machine learning models to generate insights for the clients.</p>
+
+<p>This is what we have already done to some extent. We still have been facing the Google and Facebook API Authorization Access issue having applied for the access for about a month now. If you have any tips regarding the API access, please let me know. Also, if you think there are any red flags in this approach or if there’s something you would want to suggest, I would be happy to incorporate them.</p>
+
+
+</div>
+
+<div class="pagination">
+  
+  
+    <a href="/myworks/2019-08-28-how-i-mapped-almost-4000-resumes-to-20-jobs.html" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+
+
+    </main>
+
+    <footer>
+  <span>
+    &copy; <time datetime="2020-03-18 10:16:59 +0545">2020</time> Dipesh Pandey. All Rights Reserved.
+  </span>
+</footer>
+
+  </body>
+</html>

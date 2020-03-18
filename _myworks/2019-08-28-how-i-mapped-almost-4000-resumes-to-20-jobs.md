@@ -97,7 +97,7 @@ class Rule():
             if len(email)>0:
                 return email[0]
         return ''
-        
+
     def find_phone(self, ):
         regex = r"\+\d+(?:[-? \)]+\d+)+"
         cv = self.cv
@@ -110,7 +110,7 @@ class Rule():
                 if len(phone[1])>9:
                     return phone[1]
         return ''
-        
+
     def nationality(self, ):
         cv = self.cv 
         regex = r"citizenship[:\s*\t*]*\w+"
@@ -175,13 +175,13 @@ def create_profile(text, candi_name):
             if key is not np.nan:
                 temp_keys.append(key)
         total_dataset[job] = [nlp(text) for text in temp_keys]
-    
+
     matcher = PhraseMatcher(nlp.vocab)
     for job in total_dataset:
         matcher.add(job, None, *total_dataset[job])
-    
+
     doc = nlp(text)
-    
+
     d = []
     matches = matcher(doc)
     for match_id, start, end in matches:

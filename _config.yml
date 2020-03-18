@@ -20,9 +20,9 @@ author:
 
 # collections
 collections:
-  pastworks:
+  myworks:
     output: true
-    permalink: pastworks/:name:output_ext
+    permalink: myworks/:name:output_ext
     paginate: 5
   random:
     output: true
