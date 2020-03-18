@@ -1,10 +1,4 @@
----
-layout: post
-title: "Designing a serverless ads management platform for an AI company"
-author: "Dipesh"
----
-
-In recent times, I am working with an early stage startup that specializes on Ads data aggregation and analysis
+In recent times, I am working with an early-stage startup that specializes in Ads data aggregation and analysis
 to help the companies optimize their budgets through targeted insights. As a starting member of the development team,
 I took the responsibility to design the serverless architecture in AWS. After trying a few things here and there, we have
 come to use these awesome tools in AWS for the product:  
@@ -17,7 +11,7 @@ come to use these awesome tools in AWS for the product:
 
 4. S3
 
-I will explain each of them briefly below and try to show the complete picture how these components interact with each other.
+I will explain each of them briefly below and try to show the complete picture of how these components interact with each other.
 
 Because this is going to be a SaaS, we are going to expose API endpoints to our clients where they can connect their Ad accounts and allow us to collect their data. We, in turn, will produce insights from the data and help them make better use of their budget
 through Targeted Ads Placement.
@@ -25,10 +19,10 @@ through Targeted Ads Placement.
 To ensure we have a stable system, we need streaming and scheduling abilities in the product. I have approached these in the following ways.
 
 1. Streaming
-We need the capability to stream data from the Ad accounts (eg. Google, Facebook, Youtube, et. al.) upto the S3 buckets so that this data can be used for analysis in the later stage. The obvious choice was Kinesis as it has in-built configuration options for source and sinks. But we chose the lighter and more configurable tool in DynamoDb which has got it's own streaming triggers using Lambda. Also, the cost analysis helped us favor DynamoDb up front.
+We need the capability to stream data from the Ad accounts (eg. Google, Facebook, Youtube, et. al.) up to the S3 buckets so that this data can be used for analysis in the later stage. The obvious choice was Kinesis as it has in-built configuration options for source and sinks. But we chose the lighter and more configurable tool in DynamoDb which has got it's own streaming triggers using Lambda. Also, the cost analysis helped us favor DynamoDb upfront.
 
 2. Scheduling
-Apart from streaming, we also need the capability to schedule the stream. For this, there are a lots of great options available including the likes of AirFlow, Celery, et. al. We have, however, chosen Cloudwatch Events (I think they now call it EventBridge) trigerring a lambda function, this being called by an API endpoint. This would mean we could create custom schedules from the API. 
+Apart from streaming, we also need the capability to schedule the stream. For this, there are a lot of great options available including the likes of AirFlow, Celery, et. al. We have, however, chosen Cloudwatch Events (I think they now call it EventBridge) triggering a lambda function, this being called by an API endpoint. This would mean we could create custom schedules from the API. 
 
 ```python
 
