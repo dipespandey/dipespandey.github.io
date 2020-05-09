@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Designing a serverless data management platform"
+author: "Dipesh"
+---
+
 In recent times, I am working with an early-stage startup that specializes in Ads data aggregation and analysis
 to help the companies optimize their budgets through targeted insights. As a starting member of the development team,
 I took the responsibility to design the serverless architecture in AWS. After trying a few things here and there, we have
