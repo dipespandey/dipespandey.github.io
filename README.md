@@ -1,4 +1,4 @@
-# Tale
+<!-- # Tale
 
 [![Gem Version](https://badge.fury.io/rb/tale.svg)](https://badge.fury.io/rb/tale)
 
@@ -116,4 +116,6 @@ And you're all set! Head over to http://127.0.0.1:4000/ to see your site in acti
 Found a bug or have a suggestion? Feel free to create an issue or make a pull request!
 
 ## License
-See [LICENSE](https://github.com/chesterhow/tale/blob/master/LICENSE)
+See [LICENSE](https://github.com/chesterhow/tale/blob/master/LICENSE) -->
+
+# My Personal Website
