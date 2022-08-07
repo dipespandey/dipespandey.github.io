@@ -1,0 +1,12 @@
+I"†<div class="col-md-12 social">
+    <ul class="social-network social-circle">
+        <li><a href="https://linkedin.com/in/dipespandey" class="icoLinkedin" title="Linkedin"><i class="fab fa-lg fa-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/dipespandey08" class="icoTwitter" title="Twitter"><i class="fab fa-lg fa-twitter"></i></a></li>
+        <li><a href="https://discordapp.com/invite/WUhRvj2" class="icoDiscord" title="Discord"><i class="fab fa-lg fa-discord"></i></a></li>
+    </ul>				
+</div>
+
+<div style="margin-top:50px;" class="contact">
+    P.S. I prefer <a href="mailto:pandey.dipesh50@gmail.com">Email </a>!
+</div>
+:ET
