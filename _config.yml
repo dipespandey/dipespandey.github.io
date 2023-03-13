@@ -11,7 +11,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Dipesh is a software engineer based in Norway. He likes to talk about indie projects and collaborating with like-minded people
   to work on interesting projects
 footer_text: >
-keywords: python, javascript, fastapi, django, nodejs, aws, indiehackers, forex, automated trading, blockchain
+keywords: python, javascript, norway, freelancer, contract, typescript, startup, fastapi, django, nodejs, aws, indiehacker, forex, automated trading, blockchain
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -56,8 +56,8 @@ max_width: 800px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -91,7 +91,7 @@ pinterest_id: # your pinterest id
 unsplash_id: # your unsplash id
 instagram_id: # your instagram id
 facebook_id: # your facebook id
-discord_id: # your discord id (18-digit unique numerical identifier)
+discord_id: 747835324931113090 # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
   I can be best reached on Telegram
@@ -241,8 +241,8 @@ jekyll-archives:
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Pandey]
+  first_name: [Dipesh, ]
 
   style: apa
   locale: en
@@ -324,8 +324,8 @@ imagemagick:
 # -----------------------------------------------------------------------------
 
 # jekyll-diagrams:
-  # configuration, see https://github.com/zhustec/jekyll-diagrams.
-  # feel free to comment out this section if not using jekyll diagrams.
+# configuration, see https://github.com/zhustec/jekyll-diagrams.
+# feel free to comment out this section if not using jekyll diagrams.
 
 # -----------------------------------------------------------------------------
 # Optional Features
