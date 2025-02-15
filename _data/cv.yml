@@ -11,17 +11,24 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Tech Manager / Volunteer
+    - title: Full-stack Engineer
+      institution: Nofence AS
+      year: 2023 - Present
+      description:
+        - Built referral system for customers that allows them to earn rewards for referring new customers which helped increase sales by 20%.
+        - Building internal tools to help the sales team communicate properly with hubspot.
+
+    - title: Tech Manager / Volunteer (Part-time)
       institution: Studentradioen i Oslo - Radionova
-      year: 2022 - Present
+      year: 2022 - 2023
       description:
         - Working on platform development to ensure 24/7 availability of one of the biggest student run radio stations in Norway. 
         - My day-to-day tasks involve bug fixing, creating open-source tools for interfacing physical radio tools with the on-premise servers. 
-        - I am also responsible for mentoring tech enthusiasts and students.  
+        - I am also responsible for mentoring radio tech enthusiasts and students.  
 
     - title: Software Engineer
       institution: Retriever AS
-      year: 2022 - Present
+      year: 2022 - 2023
       description:
         - Working on building data pipelines to manage data from several clients across the Nordics. 
         - I am primarily responsible for working in both the infrastructure team as well as the backend team to build and test internal packages, and APIs.
@@ -60,20 +67,3 @@
         - The masters focused on analyzing the Ethereum blockchain, especially Uniswap, to identify the trends and patterns on how token pairs are traded and understand the degree of decentralization of these exchange platforms
         - I also worked as a research assistant in Database management course to help grade assignments as well as guide students
         - Took courses and built projects in various fields like Deeplearning, NLP, and Full-Stack Web Development
-        
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Quantum Mechanics
-      items: 
-        - Entanglement
-        - Reality
-    - title: Computational Physics
-      items: 
-        - Many body physics
-        - Numerical computing
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Reading, Cricket, Cooking

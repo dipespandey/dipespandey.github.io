@@ -2,11 +2,11 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: In my free time, I like to fiddle around with a few projects of my own. Over the years, I have managed to make a few friends who are interested in problem solving just like me. As a result, we have created a few projects, some of which already have some customers, while most of them are deployed and ready for users to try out. So, please feel free to comment below if you face any issues running them.
+description: In my free time, I like to fiddle around with a few projects of my own. Over the years, I have managed to make a few friends who are interested in problem solving just like me. As a result, we have created a few projects, some of which a few customers, while others are work in progress. In recent times, I have been getting more interested in open source projects and contributing to them. <br><br>Please feel free to comment below if you face any issues while trying them out.
 
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [sideproject, opensource]
 horizontal: false
 ---
 

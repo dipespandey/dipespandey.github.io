@@ -8,8 +8,7 @@ middle_name:
 last_name: Pandey
 email: pandey.dipesh50@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Dipesh is a software engineer based in Norway. He likes to talk about indie projects and collaborating with like-minded people
-  to work on interesting projects
+  Dipesh is a software engineer based in Norway. He likes to talk about indie projects and collaborating with other people on interesting projects.
 footer_text: >
 keywords: python, javascript, norway, freelancer, contract, typescript, startup, fastapi, django, nodejs, aws, indiehacker, forex, automated trading, blockchain
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -147,17 +146,20 @@ giscus:
 # -----------------------------------------------------------------------------
 
 collections:
-  news:
-    defaults:
-      layout: post
-    output: true
-    permalink: /news/:path/
+  # news:
+  #   defaults:
+  #     layout: post
+  #   output: true
+  #   permalink: /news/:path/
   projects:
     output: true
     permalink: /projects/:path/
+  models:
+    output: true
+    permalink: /models/:path/
 
-news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 5 # leave blank to include all the news in the `_news` folder
+news_scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+news_limit: 1 # leave blank to include all the news in the `_news` folder
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -344,9 +346,8 @@ enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social:
   false # enables displaying social links in the
   # navbar on the about page
-enable_project_categories:
-  true # enables categorization of projects into
-  # multiple categories
+enable_project_categories: true # enables categorization of projects into multiple categories
+enable_model_categories: true # enables categorization of models into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 

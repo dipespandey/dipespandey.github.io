@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+Title: TikTok-Style Subtitles
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: TikTokFunky,Comic Sans MS,60,&H00FFB7FF,&H00000000,&H00000000,1,0,0,0,100,100,0,1,3,1,5,10,10,30,0
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:00.00,0:00:01.61,TikTokFunky,,0,0,0,,{\fad(500,500)}- The following is a conversation
+Dialogue: 0,0:00:01.61,0:00:03.33,TikTokFunky,,0,0,0,,{\fad(500,500)}with Mark Zuckerberg，
+Dialogue: 0,0:00:03.33,0:00:05.34,TikTokFunky,,0,0,0,,{\fad(500,500)}his second time on this podcast.
+Dialogue: 0,0:00:05.34,0:00:07.26,TikTokFunky,,0,0,0,,{\fad(500,500)}He's the CEO of Meta
+Dialogue: 0,0:00:07.26,0:00:08.99,TikTokFunky,,0,0,0,,{\fad(500,500)}that owns Facebook， Instagram，
+Dialogue: 0,0:00:08.99,0:00:11.44,TikTokFunky,,0,0,0,,{\fad(500,500)}and WhatsApp， all services used
+Dialogue: 0,0:00:11.44,0:00:13.46,TikTokFunky,,0,0,0,,{\fad(500,500)}by billions of people to connect
+Dialogue: 0,0:00:13.46,0:00:15.33,TikTokFunky,,0,0,0,,{\fad(500,500)}with each other.
+Dialogue: 0,0:00:15.33,0:00:16.46,TikTokFunky,,0,0,0,,{\fad(500,500)}We talk about his vision for the future
+Dialogue: 0,0:00:16.46,0:00:19.23,TikTokFunky,,0,0,0,,{\fad(500,500)}of Meta and the future of AI
+Dialogue: 0,0:00:19.23,0:00:21.22,TikTokFunky,,0,0,0,,{\fad(500,500)}in our human world.
+Dialogue: 0,0:00:21.22,0:00:23.42,TikTokFunky,,0,0,0,,{\fad(500,500)}This is the Lex Fridman Podcast，
+Dialogue: 0,0:00:23.42,0:00:25.16,TikTokFunky,,0,0,0,,{\fad(500,500)}and now， dear friends，
+Dialogue: 0,0:00:25.16,0:00:26.62,TikTokFunky,,0,0,0,,{\fad(500,500)}here's Mark Zuckerberg.

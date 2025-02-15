@@ -140,7 +140,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .social { text-align: center; }
 
-.social .contact-icons { font-size: 4rem; }
+.social .contact-icons { font-size: 2rem; }
 
 .social .contact-icons a i::before { color: var(--global-text-color); transition-property: all 0.2s ease-in-out; }
 
@@ -180,7 +180,7 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 
 .post-list { margin: 0; margin-bottom: 40px; padding: 0; }
 
-.post-list li { border-bottom: 1px solid var(--global-divider-color); list-style: none; padding-top: 2rem; padding-bottom: 2rem; }
+.post-list li { border-bottom: 0.125px solid var(--global-divider-color); list-style: none; padding-top: 0.5rem; padding-bottom: 0.5rem; }
 
 .post-list li .post-meta { color: var(--global-text-color-light); font-size: 0.875rem; margin-bottom: 0; }
 

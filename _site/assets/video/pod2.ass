@@ -1,0 +1,111 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+Title: TikTok-Style Subtitles
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: TikTokFunky,Comic Sans MS,60,&H00FFB7FF,&H00000000,&H00000000,1,0,0,0,100,100,0,1,3,1,5,10,10,30,0
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:00.00,0:00:02.08,TikTokFunky,,0,0,0,,{\fad(500,500)}To compete， I needed to get around
+Dialogue: 0,0:00:02.08,0:00:04.43,TikTokFunky,,0,0,0,,{\fad(500,500)}the fact that I didn't want it
+Dialogue: 0,0:00:04.43,0:00:04.84,TikTokFunky,,0,0,0,,{\fad(500,500)}to be this big thing，
+Dialogue: 0,0:00:04.84,0:00:06.69,TikTokFunky,,0,0,0,,{\fad(500,500)}so I basically just rolled up
+Dialogue: 0,0:00:06.69,0:00:09.62,TikTokFunky,,0,0,0,,{\fad(500,500)}with a hat and sunglasses，
+Dialogue: 0,0:00:09.62,0:00:11.36,TikTokFunky,,0,0,0,,{\fad(500,500)}and I was wearing a COVID mask.
+Dialogue: 0,0:00:11.36,0:00:12.83,TikTokFunky,,0,0,0,,{\fad(500,500)}And I registered under my first
+Dialogue: 0,0:00:12.83,0:00:14.88,TikTokFunky,,0,0,0,,{\fad(500,500)}and middle name， so Mark Elliott.
+Dialogue: 0,0:00:14.88,0:00:16.87,TikTokFunky,,0,0,0,,{\fad(500,500)}And it wasn't until I actually pulled
+Dialogue: 0,0:00:16.87,0:00:17.97,TikTokFunky,,0,0,0,,{\fad(500,500)}all that stuff off right before
+Dialogue: 0,0:00:17.97,0:00:19.75,TikTokFunky,,0,0,0,,{\fad(500,500)}I got on the mat
+Dialogue: 0,0:00:19.75,0:00:20.64,TikTokFunky,,0,0,0,,{\fad(500,500)}that I think people knew it was me.
+Dialogue: 0,0:00:20.64,0:00:21.70,TikTokFunky,,0,0,0,,{\fad(500,500)}So it was pretty low key.
+Dialogue: 0,0:00:21.70,0:00:24.11,TikTokFunky,,0,0,0,,{\fad(500,500)}- But you're still a public figure.
+Dialogue: 0,0:00:24.11,0:00:25.52,TikTokFunky,,0,0,0,,{\fad(500,500)}- Yeah， I mean， I didn't wanna lose.
+Dialogue: 0,0:00:25.52,0:00:27.95,TikTokFunky,,0,0,0,,{\fad(500,500)}- Right， the thing you're partially afraid
+Dialogue: 0,0:00:27.95,0:00:29.17,TikTokFunky,,0,0,0,,{\fad(500,500)}of is not just the losing，
+Dialogue: 0,0:00:29.17,0:00:31.01,TikTokFunky,,0,0,0,,{\fad(500,500)}but being almost like embarrassed.
+Dialogue: 0,0:00:31.01,0:00:33.19,TikTokFunky,,0,0,0,,{\fad(500,500)}It's so raw， the sport， in that like，
+Dialogue: 0,0:00:33.19,0:00:35.54,TikTokFunky,,0,0,0,,{\fad(500,500)}it's just you and another human being.
+Dialogue: 0,0:00:35.54,0:00:36.38,TikTokFunky,,0,0,0,,{\fad(500,500)}There's a primal aspect there.
+Dialogue: 0,0:00:36.38,0:00:37.21,TikTokFunky,,0,0,0,,{\fad(500,500)}- Oh， yeah its perfect.
+Dialogue: 0,0:00:37.21,0:00:38.47,TikTokFunky,,0,0,0,,{\fad(500,500)}- For a lot of people， it can be terrifying，
+Dialogue: 0,0:00:38.47,0:00:40.53,TikTokFunky,,0,0,0,,{\fad(500,500)}especially the first time
+Dialogue: 0,0:00:40.53,0:00:40.97,TikTokFunky,,0,0,0,,{\fad(500,500)}you're doing the competing，
+Dialogue: 0,0:00:40.97,0:00:42.48,TikTokFunky,,0,0,0,,{\fad(500,500)}and it wasn't for you.
+Dialogue: 0,0:00:42.48,0:00:43.98,TikTokFunky,,0,0,0,,{\fad(500,500)}I see the look of excitement in your face.
+Dialogue: 0,0:00:43.98,0:00:46.00,TikTokFunky,,0,0,0,,{\fad(500,500)}It wasn't， no fear.
+Dialogue: 0,0:00:46.00,0:00:49.91,TikTokFunky,,0,0,0,,{\fad(500,500)}- I just think part of learning is failing.
+Dialogue: 0,0:00:49.91,0:00:52.67,TikTokFunky,,0,0,0,,{\fad(500,500)}The main thing， people who train jiu-jitsu，
+Dialogue: 0,0:00:52.67,0:00:55.07,TikTokFunky,,0,0,0,,{\fad(500,500)}it's like you need to not have pride
+Dialogue: 0,0:00:55.07,0:00:57.35,TikTokFunky,,0,0,0,,{\fad(500,500)}because I mean all the stuff
+Dialogue: 0,0:00:57.35,0:00:57.50,TikTokFunky,,0,0,0,,{\fad(500,500)}that you were talking
+Dialogue: 0,0:00:57.50,0:00:58.31,TikTokFunky,,0,0,0,,{\fad(500,500)}about before about， you know，
+Dialogue: 0,0:00:58.31,0:01:00.14,TikTokFunky,,0,0,0,,{\fad(500,500)}getting choked or getting， you know，
+Dialogue: 0,0:01:00.14,0:01:02.60,TikTokFunky,,0,0,0,,{\fad(500,500)}a joint lock.
+Dialogue: 0,0:01:02.60,0:01:03.86,TikTokFunky,,0,0,0,,{\fad(500,500)}It's um， you only get
+Dialogue: 0,0:01:03.86,0:01:06.05,TikTokFunky,,0,0,0,,{\fad(500,500)}into a bad situation
+Dialogue: 0,0:01:06.05,0:01:06.05,TikTokFunky,,0,0,0,,{\fad(500,500)}if you're not willing to tap
+Dialogue: 0,0:01:06.05,0:01:08.03,TikTokFunky,,0,0,0,,{\fad(500,500)}once you've already lost right?
+Dialogue: 0,0:01:08.03,0:01:09.80,TikTokFunky,,0,0,0,,{\fad(500,500)}And， but obviously
+Dialogue: 0,0:01:09.80,0:01:11.80,TikTokFunky,,0,0,0,,{\fad(500,500)}when you're getting started
+Dialogue: 0,0:01:11.80,0:01:12.100,TikTokFunky,,0,0,0,,{\fad(500,500)}with something， you're not gonna be
+Dialogue: 0,0:01:13.00,0:01:13.00,TikTokFunky,,0,0,0,,{\fad(500,500)}an expert at it immediately.
+Dialogue: 0,0:01:13.00,0:01:14.55,TikTokFunky,,0,0,0,,{\fad(500,500)}So you just need to be willing
+Dialogue: 0,0:01:14.55,0:01:16.85,TikTokFunky,,0,0,0,,{\fad(500,500)}to go with that.
+Dialogue: 0,0:01:16.85,0:01:17.39,TikTokFunky,,0,0,0,,{\fad(500,500)}But I think this is like， I don't know，
+Dialogue: 0,0:01:17.39,0:01:19.71,TikTokFunky,,0,0,0,,{\fad(500,500)}I mean， maybe I've just been
+Dialogue: 0,0:01:19.71,0:01:19.100,TikTokFunky,,0,0,0,,{\fad(500,500)}embarrassed enough times in my life.
+Dialogue: 0,0:01:19.100,0:01:21.79,TikTokFunky,,0,0,0,,{\fad(500,500)}Yeah.
+Dialogue: 0,0:01:21.79,0:01:22.50,TikTokFunky,,0,0,0,,{\fad(500,500)}I do think
+Dialogue: 0,0:01:22.50,0:01:22.50,TikTokFunky,,0,0,0,,{\fad(500,500)}that there's a thing where like，
+Dialogue: 0,0:01:22.50,0:01:23.84,TikTokFunky,,0,0,0,,{\fad(500,500)}you know， as people grow up，
+Dialogue: 0,0:01:23.84,0:01:25.44,TikTokFunky,,0,0,0,,{\fad(500,500)}maybe they don't wanna be embarrassed
+Dialogue: 0,0:01:25.44,0:01:27.32,TikTokFunky,,0,0,0,,{\fad(500,500)}or anything.
+Dialogue: 0,0:01:27.32,0:01:27.32,TikTokFunky,,0,0,0,,{\fad(500,500)}They've built their adult identity
+Dialogue: 0,0:01:27.32,0:01:29.40,TikTokFunky,,0,0,0,,{\fad(500,500)}and they kind of have a sense
+Dialogue: 0,0:01:29.40,0:01:32.10,TikTokFunky,,0,0,0,,{\fad(500,500)}of who they are
+Dialogue: 0,0:01:32.10,0:01:33.20,TikTokFunky,,0,0,0,,{\fad(500,500)}and what they want to project
+Dialogue: 0,0:01:33.20,0:01:34.38,TikTokFunky,,0,0,0,,{\fad(500,500)}and I don't know.
+Dialogue: 0,0:01:34.38,0:01:35.68,TikTokFunky,,0,0,0,,{\fad(500,500)}I think maybe to some degree.
+Dialogue: 0,0:01:37.39,0:01:39.04,TikTokFunky,,0,0,0,,{\fad(500,500)}You know your ability
+Dialogue: 0,0:01:39.04,0:01:41.04,TikTokFunky,,0,0,0,,{\fad(500,500)}to keep doing interesting things
+Dialogue: 0,0:01:41.04,0:01:44.28,TikTokFunky,,0,0,0,,{\fad(500,500)}is your willingness to be embarrassed
+Dialogue: 0,0:01:44.28,0:01:46.23,TikTokFunky,,0,0,0,,{\fad(500,500)}again and go back to step one
+Dialogue: 0,0:01:46.23,0:01:48.19,TikTokFunky,,0,0,0,,{\fad(500,500)}and start as a beginner
+Dialogue: 0,0:01:48.19,0:01:50.32,TikTokFunky,,0,0,0,,{\fad(500,500)}and get your **** kicked
+Dialogue: 0,0:01:50.32,0:01:53.04,TikTokFunky,,0,0,0,,{\fad(500,500)}and you know look stupid doing things，
+Dialogue: 0,0:01:53.04,0:01:54.65,TikTokFunky,,0,0,0,,{\fad(500,500)}and yeah I think so many of the things
+Dialogue: 0,0:01:54.65,0:01:56.68,TikTokFunky,,0,0,0,,{\fad(500,500)}that we're doing
+Dialogue: 0,0:01:56.68,0:01:56.83,TikTokFunky,,0,0,0,,{\fad(500,500)}whether it's whether it's this.
+Dialogue: 0,0:01:56.83,0:01:58.07,TikTokFunky,,0,0,0,,{\fad(500,500)}I mean this is just like a kind
+Dialogue: 0,0:01:58.07,0:01:59.77,TikTokFunky,,0,0,0,,{\fad(500,500)}of a physical part of my life，
+Dialogue: 0,0:01:59.77,0:02:02.07,TikTokFunky,,0,0,0,,{\fad(500,500)}but but it running the company
+Dialogue: 0,0:02:02.07,0:02:03.38,TikTokFunky,,0,0,0,,{\fad(500,500)}it's like we just take on
+Dialogue: 0,0:02:03.38,0:02:07.18,TikTokFunky,,0,0,0,,{\fad(500,500)}new adventures and， you know，
+Dialogue: 0,0:02:07.18,0:02:08.38,TikTokFunky,,0,0,0,,{\fad(500,500)}all the big things that we're doing
+Dialogue: 0,0:02:08.38,0:02:11.12,TikTokFunky,,0,0,0,,{\fad(500,500)}I think of is like 10 plus year missions
+Dialogue: 0,0:02:11.12,0:02:12.52,TikTokFunky,,0,0,0,,{\fad(500,500)}that we're on where you think
+Dialogue: 0,0:02:12.52,0:02:14.08,TikTokFunky,,0,0,0,,{\fad(500,500)}of as like 10 plus year missions
+Dialogue: 0,0:02:14.08,0:02:14.32,TikTokFunky,,0,0,0,,{\fad(500,500)}that we're on where often early on，
+Dialogue: 0,0:02:14.32,0:02:16.82,TikTokFunky,,0,0,0,,{\fad(500,500)}people doubt that we're gonna be able
+Dialogue: 0,0:02:16.82,0:02:17.15,TikTokFunky,,0,0,0,,{\fad(500,500)}to do it and the initial work
+Dialogue: 0,0:02:17.15,0:02:19.16,TikTokFunky,,0,0,0,,{\fad(500,500)}seems kind of silly and our whole ethos
+Dialogue: 0,0:02:19.16,0:02:21.25,TikTokFunky,,0,0,0,,{\fad(500,500)}is we don't wanna wait，
+Dialogue: 0,0:02:21.25,0:02:21.25,TikTokFunky,,0,0,0,,{\fad(500,500)}until something is perfect
+Dialogue: 0,0:02:21.25,0:02:22.94,TikTokFunky,,0,0,0,,{\fad(500,500)}to put it out there.
+Dialogue: 0,0:02:22.94,0:02:23.24,TikTokFunky,,0,0,0,,{\fad(500,500)}We wanna get it out quickly
+Dialogue: 0,0:02:23.24,0:02:24.35,TikTokFunky,,0,0,0,,{\fad(500,500)}and get feedback on it.
+Dialogue: 0,0:02:24.35,0:02:25.42,TikTokFunky,,0,0,0,,{\fad(500,500)}And so I don't know， I mean，
+Dialogue: 0,0:02:25.42,0:02:27.66,TikTokFunky,,0,0,0,,{\fad(500,500)}there's probably just something
+Dialogue: 0,0:02:27.66,0:02:28.24,TikTokFunky,,0,0,0,,{\fad(500,500)}about how I approach things in there.
+Dialogue: 0,0:02:28.24,0:02:29.81,TikTokFunky,,0,0,0,,{\fad(500,500)}But I just kind of think
+Dialogue: 0,0:02:29.81,0:02:31.01,TikTokFunky,,0,0,0,,{\fad(500,500)}that the moment that you decide
+Dialogue: 0,0:02:31.01,0:02:32.13,TikTokFunky,,0,0,0,,{\fad(500,500)}that you're gonna be too embarrassed
+Dialogue: 0,0:02:32.13,0:02:34.56,TikTokFunky,,0,0,0,,{\fad(500,500)}to try something new，
+Dialogue: 0,0:02:34.56,0:02:35.43,TikTokFunky,,0,0,0,,{\fad(500,500)}then you're not gonna
+Dialogue: 0,0:02:35.43,0:02:36.10,TikTokFunky,,0,0,0,,{\fad(500,500)}learn anything anymore.
